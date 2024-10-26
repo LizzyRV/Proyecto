@@ -16,8 +16,8 @@
 
 1. **Clona el repositorio:**
 ```bash
-git clone https://github.com/JuanVallejo32/Curso-IA---Talentotech2.git
-cd Curso-IA---Talentotech2
+git clone https://github.com/JuanVallejo32/Proyecto.git
+cd Proyecto
 ```
 
 2. **Activa el entorno virtual:**
