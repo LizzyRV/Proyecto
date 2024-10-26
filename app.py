@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request
+render_template
+import os
 import pickle
 import numpy as np  # Asegúrate de importar numpy
 
