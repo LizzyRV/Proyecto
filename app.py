@@ -33,7 +33,7 @@ def predecir_cafe():
     datos = np.array([[area, production]])
     prediccion = modelo_cafe.predict(datos)
         
-    return render_template("index.html", prediccion=f'El rendimiento para café es: {prediccion[0]:.2f}')
+    return render_template("index.html", prediccion=f'El rendimiento para café es: {prediccion[0]:.2f} (ha/ton)')
 
 # Cacao
 @app.route("/predecir_cacao", methods=['POST'])
