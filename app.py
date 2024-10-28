@@ -33,7 +33,7 @@ def predecir_cafe():
     datos = np.array([[area, production]])
     prediccion = modelo_cafe.predict(datos)
         
-    return render_template("index.html", prediccion=f'El rendimiento para café esss: {prediccion[0]:.2f} (ha/ton)')
+    return render_template("index.html", prediccion=f'El rendimiento para café es: {prediccion[0]:.2f} (ton/ha)')
 
 # Cacao
 @app.route("/predecir_cacao", methods=['POST'])
@@ -44,7 +44,7 @@ def predecir_cacao():
     datos = np.array([[area, production]])
     prediccion = modelo_cacao.predict(datos)
         
-    return render_template("index.html", prediccion=f'El rendimiento para cacao es: {prediccion[0]:.2f}')
+    return render_template("index.html", prediccion=f'El rendimiento para cacao es: {prediccion[0]:.2f} (ton/ha)')
 
 # Banano
 @app.route("/predecir_banano", methods=['POST'])
@@ -55,7 +55,7 @@ def predecir_banano():
     datos = np.array([[area, production]])
     prediccion = modelo_banano.predict(datos)
         
-    return render_template("index.html", prediccion=f'El rendimiento para banano es: {prediccion[0]:.2f}')
+    return render_template("index.html", prediccion=f'El rendimiento para banano es: {prediccion[0]:.2f} (ton/ha)')
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
